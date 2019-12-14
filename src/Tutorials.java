@@ -108,6 +108,71 @@ public class Tutorials {    //class name must match the file name, and all code 
     System.out.println(i);
     System.out.println(j);
 
+    /*
+    Casting is when you assign a value of one primitive data type to another type
+
+    WIDENING CASTING(automatically): converting a smaller type to a larger type size
+    NARROWING CASTING(manually): converting a larger type to a smaller type
+     */
+
+    //narrowing casting example
+    int intWide = 9;
+    double doubleNum = myInt; //Automatic casting: int to double
+
+    System.out.println(intWide);    //outputs 9
+    System.out.println(doubleNum); //outputs 9.0
+
+    //narrowing casting example
+    double classDouble = 9.78;
+    int intClass = (int) classDouble;   //Manual casting: double to find int
+
+    System.out.println(classDouble);    //Outputs 9.78
+    System.out.println(intClass);   //Outputs 9
+
+
+    /*
+    Java operators include arithmetic operators, assignment operators, comparison operators,
+    logical operators, bitwise operators
+    */
+
+    //Arithmetic operators examples
+    int g = 12, k = 4;
+    System.out.println(g + k);  //adds together two values
+    System.out.println(g -k);   //subtracts one value from another
+    System.out.println(g * k);  //Multiplies two values
+    System.out.println(g/k);    //Divides two values
+    System.out.println(g % k);  //Returns the division remainder
+    System.out.println(++k);  //Increases teh value of a variable by 1
+    System.out.println(--k);    //Decreases the value of a variable by 1
+
+    //Assignment operator examples
+    int r = 5;
+    System.out.println(r = 5);  //same as r = 5
+    System.out.println(r += 3); //same as r + 3
+    System.out.println(r -= 3); //same as r - 3
+    System.out.println(r *= 3); //same as r * 3
+    System.out.println(r /= 3); //same as r / 3
+    System.out.println(r %= 3); //same as r % 3
+    System.out.println(r & 3);  //same as r & 3
+    System.out.println(r |= 3); //same as r | 3
+    System.out.println(r ^= 3); //same as r ^ 3
+    System.out.println(r >>= 3);    //same as r = r >> 3
+    System.out.println(r <<= 3);    //same as r = << 3
+
+    //Comparison operator examples
+    int w = 2, m = 5;
+    System.out.println(w == m); //equal to
+    System.out.println(w != m); //Not equal to
+    System.out.println(w > m);  //greater than
+    System.out.println(w > m);  //less than
+    System.out.println(w >= m); //greatest than or equal to
+    System.out.println(w <= m); //less than or equal to
+
+    //Logical operator examples
+    int e = 9;
+    System.out.println(e < 5 && e < 10);    //Logical and...Returns true if both statements are true
+    System.out.println(e < 5 ||e< 4);   //Logical or...Returns true if one of the statements is true
+    System.out.println(!(e < 5 && e < 10)); //Logical not...Reverse the result, returns false is the result is true
 
 
 
