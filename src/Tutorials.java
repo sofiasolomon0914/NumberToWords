@@ -174,10 +174,49 @@ public class Tutorials {    //class name must match the file name, and all code 
     System.out.println(e < 5 ||e< 4);   //Logical or...Returns true if one of the statements is true
     System.out.println(!(e < 5 && e < 10)); //Logical not...Reverse the result, returns false is the result is true
 
+    //Java strings: used for storing text
+    String greeting = "Hello";
+    //String length: finding the the length of a string
+    String txt = "ABCDEFGHIJKLMNOPQRSTUVWKYZ";
+    System.out.println("The length of the txt string is: " + txt.length());
+    //Changing the string to lowercase/UPPERCASE
+    String word = "Hello World";
+    System.out.println(word.toUpperCase());    //Outputs "HELLO WORLD"
+    System.out.println(word.toLowerCase());     //Outputs "hello world"
+    //indexOf() returns the position of the first occurrence of a specified text in a string;starts counting from 0
+    String textIndex = "Please locate where 'locate' occurs!";
+    System.out.println(textIndex.indexOf("locate"));    //Outputs 7
 
+    //You can use the + operator to combine string (concatenation)
+    String first_Name = "John";
+    String last_Name = "Doe";
+    System.out.println(first_Name + " " + last_Name);
+    //You can also use concat() to concatenate the two strings
+    System.out.println(first_Name.concat(last_Name));
 
+    //you can use a backslash to turn special characters into string characters
+    String textOne = "We are the so-called \"Vikings\" from the north.";
+    System.out.println(textOne);
+    String textTwo = "It\'s alright.";
+    System.out.println(textTwo);
+    String textThree = "The character \\ is called backslash.";
+    System.out.println(textThree);
 
+    /*
+    Other escape sequences include: \n  \r  \t  \b  \f
+    \n NEW LINE
+    \r CARRIAGE RETURN
+    \t TAB
+    \b BACKSPACE
+    \f FORM FEED
+    */
 
+    //If you add two strings, the result will be a string concatenation
+    String d = "10";
+    String s = "20";
+    String z = d + s;   // z will be 1020 (a String)
+    System.out.println(z);
+;
     }
 
 
