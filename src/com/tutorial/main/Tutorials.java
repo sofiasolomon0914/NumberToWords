@@ -1,3 +1,5 @@
+package com.tutorial.main;
+
 public class Tutorials {    //class name must match the file name, and all code must be inside class
     //all classes should start with an uppercase first letter
     public static void main(String[] args) {    //code inside main() will always be executed
@@ -341,7 +343,59 @@ public class Tutorials {    //class name must match the file name, and all code 
         System.out.println(q);
         q++;
     }
+
+    /*
+    The do/while loop will execute the code block once, before checking if the condition is true,
+    then it will repeat the loop as the condition is true.
+
+    Syntax:
+        do {
+            block of code to be executed
+        }
+        while (condition);
+
+     */
+    int f = 0;
+    do {
+        System.out.println(f);
+        f++;
     }
+    while (f < 5);
+
+    /*
+    If you know exactly how many times you want to loop through a block of code,
+    use a for loop instead of a while loop:
+
+    Syntax:
+        for (statement 1(executed once before block code);
+            statement 2(defines the condition for executing block code); statement 3(is executed every time after the code
+            block is executed))
+        code block to be executed
+     */
+
+    for (int n = 0; n< 5; n++)  {
+        System.out.println(n);
+    }
+
+    for (int n = 0; n <= 10; n = n + 2) {
+        System.out.println(n);
+    }
+
+    /*
+    A for- each loop is used to loop through elements in an array
+    Syntax:
+        for (type variableName : arrayName)  {
+            code block to be executed
+        }
+     */
+     String[] cars = {"Volve", "BMW", "Ford", "Mazda"};
+     for (String l : cars)  {
+         System.out.println(l);
+     }
+
+    }
+
+
 
 
 }
