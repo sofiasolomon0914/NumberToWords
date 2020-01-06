@@ -31,6 +31,5 @@ public class Main {
         //result = result + 2;
         result += 2;   // 1 + 2 = 3
         System.out.println("1 + 2 = " + result);
-
-    }
+}
 }
