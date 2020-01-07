@@ -70,9 +70,32 @@ public class Main {
         }
 
         boolean isCar = false;
-        if (!isCar) {
+        if (isCar) {
             System.out.println("This is not supposed to happen");
         }
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        if (wasCar) {
+            System.out.println("wasCar is true");
+
+        }
+
+        double variableOne = 20.00d;
+        double variableTwo = 80.00d;
+        double variableSum = (variableOne + variableTwo) * 100.00d;
+        System.out.println("MyValuesSum = " + variableSum);
+        double variableRemainder = variableSum % 40.00d;
+        System.out.println("variableRemainder = " + variableRemainder);
+        boolean isNoRemainder = (variableRemainder == 0) ? true : false;
+        System.out.println("isNoRemainder = " + isNoRemainder);
+        if (!isNoRemainder) {
+            System.out.println("Got some remainder");
+        }
+
+
+
+
 
 
 }
