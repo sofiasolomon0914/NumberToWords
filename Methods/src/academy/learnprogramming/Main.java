@@ -3,8 +3,6 @@ package academy.learnprogramming;
 public class Main {
 
     public static void main(String[] args) {
-
-
         int highScore = calculateScore(true, 800, 5, 100);
         System.out.println("Your final score was " + highScore);
 
@@ -44,7 +42,7 @@ public class Main {
 
     public static void displayHighScorePosition(String playersName, int highScorePosition) {
         System.out.println(playersName + " managed to get into position "
-                    + highScorePosition + " on the high score table.");
+                + highScorePosition + " on the high score table.");
     }
 
     public static int calculateHighScorePosition(int playersScore){
