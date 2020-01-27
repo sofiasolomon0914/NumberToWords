@@ -7,6 +7,13 @@ public class Main {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
+        double centimeters = calcFeetAndInchesToCentimeters(6, 0);
+        if (centimeters < 0.0) {
+            System.out.println("Invalid parameters");
+        }
+
+        calcFeetAndInchesToCentimeters(100);
+
     }
 
     public static int calculateScore(String playerName, int score){
@@ -25,22 +32,26 @@ public class Main {
         return 0;
     }
 
-    public static int calcFeetAndInchesToCentimeters(int feet, int inches){
-        if(feet < 0 || inches < 0){
+    public static double calcFeetAndInchesToCentimeters(double feet, double inches){
+        if(feet < 0 || (inches < 0) || (inches > 12)){
+            System.out.println("Invalid feet or inches parameters");
             return -1;
-        } else {
-            double totalCentimeters = ((feet * 12) + inches) / 2.54;
-            return (int) totalCentimeters;
         }
+
+        double centimeters = ( feet * 12) * 2.54;
+        centimeters += inches * 2.54;
+        System.out.println(feet + " feet, " + inches + " inches = " + centimeters + " cm");
+        return centimeters;
     }
 
-    public static int calcFeetAndInchesToCentimeters(int inches){
+    public static double calcFeetAndInchesToCentimeters(double inches){
         if(inches < 0 ) {
             return -1;
-        } else {
-            double inchesToFeet = (inches/12);
-            return (int) inchesToFeet;
         }
+        double feet = (int) inches / 12;
+        double remainingInches = (int) inches % 12;
+        System.out.println(inches + " inches is equal to " + feet + "feet and " + remainingInches + "inches");
+        return calcFeetAndInchesToCentimeters(feet, remainingInches);
     }
 
 }
