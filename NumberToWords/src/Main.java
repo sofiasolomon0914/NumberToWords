@@ -6,6 +6,7 @@ public class Main {
     }
     public static String numberToWords(int number){
 
+        reverse(number);
 
         if(number < 0){
             System.out.println("Invalid Value");
@@ -59,7 +60,6 @@ public class Main {
 
     public static int reverse(int number){
         return number = reverse(number);
-
     }
 
 
